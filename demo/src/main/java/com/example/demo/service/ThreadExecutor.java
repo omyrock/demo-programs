@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class TreadExecutor {
+public class ThreadExecutor {
     public static void main(String[] args) {
         long currentTime = System.currentTimeMillis();
 //        Thread threads[]= new Thread[9];
