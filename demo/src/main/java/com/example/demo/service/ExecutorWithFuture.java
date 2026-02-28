@@ -6,7 +6,6 @@ import java.util.concurrent.*;
 
 public class ExecutorWithFuture {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
          executorExample();
 //        ExecutorService executorService = Executors.newSingleThreadExecutor();
 //        Callable  gfd =() -> 45;
@@ -19,7 +18,7 @@ public class ExecutorWithFuture {
 //        executorService.submit(() -> System.out.print("thread is running"),"success");
     }
 
-    private static void executorExample()  {
+    private static void executorExample() throws InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         Integer i = null;
 //        try {
@@ -79,7 +78,9 @@ public class ExecutorWithFuture {
 //
 //            }
 //        }
+        Thread.sleep(1000);
         executorService.shutdown();
+
         System.out.println("Hello World");
 
 
