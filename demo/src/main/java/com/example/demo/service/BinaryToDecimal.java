@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 public class BinaryToDecimal {
     public static void main(String[] args) {
-        String str="011";
+        String str="110";
 //        getBinaryToDecimal(str);
         getBinaryIfStringWithoutInbuiltMethod(str);
     }
@@ -16,7 +16,6 @@ public class BinaryToDecimal {
 
         }
         System.out.println(dec);
-
     }
 
     private static void getBinaryToDecimal(String str) {
