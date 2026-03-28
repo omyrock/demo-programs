@@ -26,9 +26,7 @@ public class ValidParanthesisUsingStack {
                         System.out.println("not a valid paranthesis");
                         return;
                     }
-
             }
-
         }
         System.out.println(seen.isEmpty());
         return;
