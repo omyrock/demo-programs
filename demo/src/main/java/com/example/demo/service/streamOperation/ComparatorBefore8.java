@@ -33,7 +33,7 @@ public class ComparatorBefore8 {
             }
         });
         for(Student st:students){
-            System.out.println(st);
+            System.out.println(st+" :");
         }
     }
 }
