@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.streamOperation;
 
 import java.util.Arrays;
 import java.util.Collections;

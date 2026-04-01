@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.stringQuestion;
 
 import java.util.HashSet;
 import java.util.Set;
