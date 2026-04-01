@@ -10,7 +10,6 @@ public class GroupingAnagram {
 
     private static List<List<String>> getGroupingAnagram(List<String> group) {
         Map<String,List<String>> seen= new HashMap<>();
-
             for(int i=0; i<group.size(); i++){
                  char first[]=group.get(i).toCharArray();
                  Arrays.sort(first);
