@@ -12,7 +12,8 @@ public class ComparatorBefore8 {
         students.add( new Student("deep","delhi",5));
         students.add( new Student("yt","dibiyapur",5));
         students.add( new Student(null,"mujuffarpur",11));
-        students.add( new Student("aandeep","mujuffarpur",5));
+        students.add( new Student("aandeep","mujuffarpur",45));
+        students.add( new Student("sanju","Mujuffarpur Nagar",5));
         Collections.sort(students, new Comparator<Student>() {
             @Override
             public int compare(Student a, Student b) {
