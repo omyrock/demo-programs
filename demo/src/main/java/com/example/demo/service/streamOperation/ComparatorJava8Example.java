@@ -3,6 +3,7 @@ package com.example.demo.service.streamOperation;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class ComparatorJava8Example {
 
@@ -12,14 +13,15 @@ public class ComparatorJava8Example {
         list.add( new Stud("deep","delhi",5));
         list.add( new Stud(null,"dibiyapur",5));
         list.add( new Stud("man","mujuffarpur",11));
-        list.add( new Stud("aandeep","mujuffarpur",5));
+        list.add( new Stud("aandeep","mujuffarpur",6));
         Comparator<Stud> comparing = Comparator.comparing(Stud::getName,Comparator.nullsFirst(String::compareTo)).
                 thenComparing(Stud::getRollNumber,Comparator.nullsFirst(Integer::compareTo)).
                 thenComparing(Stud::getAddress,Comparator.nullsFirst(String::compareTo));
         list.sort(comparing);
-
+        Stud student=list.stream().sorted(Comparator.comparing(Stud::getRollNumber)).skip(1).findFirst().get();
+        System.out.println(student.getRollNumber());
         for(Stud stt:list){
-            System.out.println(stt.getName()+ "  "+stt.getRollNumber()+ " "+stt.getAddress());
+           // System.out.println(stt.getName()+ "  "+stt.getRollNumber()+ " "+stt.getAddress());
         }
 
 
