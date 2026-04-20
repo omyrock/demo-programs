@@ -7,7 +7,7 @@ public class SortingWithLamda {
     public static void main(String[] args) {
         List<Integer> list= Arrays.asList(1,2,7,89,3);
        // getSorting(list);
-//        getSortingInTreeSet();
+        getSortingInTreeSet();
         getSortingInTreeMap();
     }
 
@@ -28,11 +28,13 @@ public class SortingWithLamda {
          set.add(68);
          set.add(7);
          set.add(43);
+        System.out.print ("Sorting in Tree set is :");
         System.out.println(set);
     }
 
     private static void getSorting(List<Integer> list) {
         Collections.sort(list,(a,b)->(a>b)?1 :(a<b)?-1:0 );
+        System.out.print("Soting is the list is :");
         System.out.println(list);
     }
 }

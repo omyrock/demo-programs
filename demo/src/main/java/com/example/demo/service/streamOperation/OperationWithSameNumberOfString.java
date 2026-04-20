@@ -12,8 +12,8 @@ public class OperationWithSameNumberOfString {
     private static void getpalindromeFromtheArray() {
 
         String[] myArrays
-                = new String[] { "madam", "please", "refer",
-                "link",  "on",     "racecar" };
+                = new String[] { "madam","please","refer",
+                "link","on","racecar" };
          Arrays.asList(myArrays).stream().filter(s->palindrome(s)).forEach(System.out
          ::println);
 

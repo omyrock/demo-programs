@@ -12,11 +12,10 @@ public class ThreacExecutorPractice {
                 executorService.shutdown();
     }
 
-    private static Object getSumOfNumbers() {
+    private static void getSumOfNumbers() {
         List<Integer> list=Arrays.asList(2,4,7,3,2);
         int sum=list.stream().reduce((a,b)->a+b).get();
         System.out.println(sum);
-        return sum;
     }
 
 

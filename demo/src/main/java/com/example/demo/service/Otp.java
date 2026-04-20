@@ -13,7 +13,5 @@ public class Otp {
         SecureRandom random= new SecureRandom();
         int i = 100000 + random.nextInt(988888);
         System.out.println(i);
-
-
     }
 }
