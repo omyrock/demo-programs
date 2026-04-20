@@ -9,10 +9,10 @@ public class CycleDetectionInLinkedList {
         listNode.next.next=new ListNode(4);
         listNode.next.next.next=listNode.next;
         System.out.println(isCycleInLinkedList(listNode));
-        System.out.println(getStatingPonintOfCycleInLinkedList(listNode).value);
+        System.out.println(getStartingPonintOfCycleInLinkedList(listNode).value);
     }
 
-    private static ListNode getStatingPonintOfCycleInLinkedList(ListNode head) {
+    private static ListNode getStartingPonintOfCycleInLinkedList(ListNode head) {
         ListNode slow= head;
         ListNode fast= head;
         if(head==null){
