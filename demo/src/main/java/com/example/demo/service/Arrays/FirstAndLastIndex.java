@@ -8,7 +8,7 @@ import java.util.Map;
 public class FirstAndLastIndex {
     public static void main(String[] args) {
         int arr1[]={4,3,2,4,7};
-        int arr[]={4,3,2,4,7,7};
+        int arr[]={4,3,2,4,7,7,4};
 
 //        getFirstAndLastIndexOfRepeatedNumber(arr1);
           getAllRepaetingElementWithIndexes(arr);

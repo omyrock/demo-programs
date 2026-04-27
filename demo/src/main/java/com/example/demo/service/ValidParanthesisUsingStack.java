@@ -16,7 +16,7 @@ public class ValidParanthesisUsingStack {
                 seen.push(ch);
             }else{
                 if(seen.isEmpty()) {
-                    System.out.println("not a valid paranthes");
+                    System.out.println("not a valid paranthesis");
                     return;
                 }
                     char charFromStack = seen.pop();

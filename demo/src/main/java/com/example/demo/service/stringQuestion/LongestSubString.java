@@ -17,11 +17,9 @@ public class LongestSubString {
                while(seen.contains(string.charAt(i))){
                      seen.remove(string.charAt(left));
                      left++;
-
                }
                seen.add(string.charAt(i));//abc
              length=Math.max(length,i-left+1);
-
         }
         System.out.println(length);
     }

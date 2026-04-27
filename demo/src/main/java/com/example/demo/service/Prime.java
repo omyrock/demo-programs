@@ -24,7 +24,6 @@ public class Prime {
               if(b%i==0 || b/(i+2)==0){
                   System.out.println(b+ " is not a prime number");
               }
-
           }
         System.out.println(a+ " is  a prime number");
     }
