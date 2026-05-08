@@ -25,7 +25,6 @@ public class StringReverseWithoutSpecialCharacter {
                     left++;
                     right--;
                 }
-
             }
         Arrays.asList(chh).forEach(System.out::print);
     }
