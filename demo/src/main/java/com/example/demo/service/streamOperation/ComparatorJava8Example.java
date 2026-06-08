@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ComparatorJava8Example {
 
@@ -25,7 +27,9 @@ public class ComparatorJava8Example {
         }
 
 
-//        list.stream().sorted(Comparator.comparing(Stud::getName).thenComparing(Stud::getRollNumber));
+       List<Stud> hgfdsa= list.stream().sorted(Comparator.comparing(Stud::getName, Comparator.nullsFirst(String::compareTo)).
+                thenComparing(Stud::getRollNumber, Comparator.nullsFirst(Integer::compareTo))).collect(Collectors.toList());
+
     }
 }
 class Stud {

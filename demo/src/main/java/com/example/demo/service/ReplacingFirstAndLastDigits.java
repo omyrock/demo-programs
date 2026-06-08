@@ -3,6 +3,14 @@ package com.example.demo.service;
 public class ReplacingFirstAndLastDigits {
     public static void main(String[] args) {
         int a=1234;
+        StringBuilder sb =  new StringBuilder();
+        String str=String.valueOf(a);
+        char []charArray =str.toCharArray();
+         for(int i=1; i<charArray.length-1; i++){
+             sb.append(charArray[i]);
+         }
+        System.out.println(charArray[charArray.length-1]+sb.toString()+charArray[0] );
+         // WITHOUT METHOD
         replacing(a);
     }
 

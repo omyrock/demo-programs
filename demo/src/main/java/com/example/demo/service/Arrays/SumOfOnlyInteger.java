@@ -8,8 +8,6 @@ public class SumOfOnlyInteger {
 
     private static void getSumOfIntegerOnly(Object[] arr) {
         int sum=0;
-        StringBuilder sb= new StringBuilder();
-
           for(Object obj:arr){
               if(obj instanceof Integer){
                   sum+=(Integer)obj;

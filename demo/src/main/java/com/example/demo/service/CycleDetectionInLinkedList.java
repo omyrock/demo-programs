@@ -31,7 +31,6 @@ public class CycleDetectionInLinkedList {
                  return ptr1;
             }
         }
-
       return null;
     }
 

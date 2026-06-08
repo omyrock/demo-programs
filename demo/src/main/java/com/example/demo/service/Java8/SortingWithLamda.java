@@ -6,9 +6,12 @@ import java.util.stream.Collectors;
 public class SortingWithLamda {
     public static void main(String[] args) {
         List<Integer> list= Arrays.asList(1,2,7,89,3);
-       // getSorting(list);
-        getSortingInTreeSet();
-        getSortingInTreeMap();
+        List<Integer> listOfNum = Arrays.asList(1,2,3,4,2,5,3,6);
+        Set<Integer> collect = listOfNum.stream().filter(str ->Collections.frequency(listOfNum,str)<2).collect(Collectors.toSet());
+        System.out.println(collect);
+        // getSorting(list);
+//        getSortingInTreeSet();
+//        getSortingInTreeMap();
     }
 
     private static void getSortingInTreeMap() {

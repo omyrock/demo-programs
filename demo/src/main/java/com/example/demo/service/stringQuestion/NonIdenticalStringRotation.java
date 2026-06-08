@@ -13,7 +13,7 @@ public class NonIdenticalStringRotation {
                 return false;
         }
          String s3=s1+s2;
-          return  s3.contains(s2);
+         return  s3.contains(s2);
 
 
     }

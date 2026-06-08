@@ -27,7 +27,6 @@ public class ValidParanthesisUsingDeque {
                         cc==']' && last!='[' ){
                     return false;
                 }
-
             }
         }
         return seen.isEmpty();
